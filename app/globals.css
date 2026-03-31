@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0f0e0c;
+  --cream: #f5f0e8;
+  --warm-white: #faf8f4;
+  --gold: #c9a84c;
+  --gold-light: #e8d08a;
+  --gold-muted: #8a6f35;
+  --stone: #9e9589;
+  --stone-light: #d4cfc7;
+  --error: #c0392b;
+  --success: #27ae60;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--warm-white);
+  color: var(--ink);
+}
+
+body { min-height: 100vh; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--stone-light); border-radius: 3px; }
